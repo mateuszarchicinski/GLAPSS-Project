@@ -1,5 +1,5 @@
 <br/>
-<h1 align="center" border="none"><a href="http://glapss-project.justforyou.com.pl/#">GLAPSS-Project</a></h1>
+<h1 align="center" border="none"><a href="http://glapss-project.justforyou.com.pl">GLAPSS-Project</a></h1>
 <br/>
 <br/>
 <h2 align="center" border="none">Details:</h2>
