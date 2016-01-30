@@ -1,0 +1,78 @@
+-- phpMyAdmin SQL Dump
+-- version home.pl
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Czas wygenerowania: 30 Sty 2016, 22:21
+-- Wersja serwera: 5.5.44-37.3-log
+-- Wersja PHP: 5.2.17
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Baza danych: `18659907_sm_i_kb`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla tabeli `geolocation_phone_signal_strength`
+--
+
+CREATE TABLE IF NOT EXISTS `geolocation_phone_signal_strength` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `lat` double NOT NULL,
+  `lon` double NOT NULL,
+  `signal_dBm` float NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=34 ;
+
+--
+-- Zrzut danych tabeli `geolocation_phone_signal_strength`
+--
+
+INSERT INTO `geolocation_phone_signal_strength` (`id`, `lat`, `lon`, `signal_dBm`) VALUES
+(1, 52.4919687, 21.6278995, -95),
+(2, 51.8729692, 22.7272219, -93),
+(3, 51.31766186999999, 21.902454159999994, -75),
+(4, 51.41740557358865, 21.961437341821497, -95),
+(5, 52.2307032, 20.9774059, -83),
+(6, 52.2313785, 20.9797963, -100),
+(7, 52.2307032, 20.9774059, -83),
+(8, 52.1995301, 20.9520713, -90),
+(9, 53.4558311, -7.0933567, -69),
+(10, 51.2408668, 22.5428718, -89),
+(11, 53.1786851, 23.2626601, -99),
+(12, 54.18795539328854, 19.402953376014935, -94),
+(13, 52.3061767, 21.0820106, -88),
+(14, 53.5615953, -2.2142827, -90),
+(15, 53.1089605, 16.3928916, -83),
+(16, 52.2355486, 21.006384, -83),
+(17, 52.2725192, 20.9680905, -83),
+(18, 52.3270574, 21.0340713, -83),
+(19, 52.2237202, 21.042584, -100),
+(20, 52.224838, 21.0434075, -100),
+(21, 52.2254024, 21.0439066, -100),
+(22, 52.2300521, 21.0512597, -73),
+(23, 52.2395662, 21.084001, -100),
+(24, 52.1618978, 21.0533002, -100),
+(25, 52.2322069, 20.9587904, -97),
+(26, 52.2353892, 21.0119234, -83),
+(27, 52.2299565, 21.0202165, -83),
+(28, 52.0716317, 21.1060859, -97),
+(29, 52.2537218, 21.0330741, -83),
+(30, 52.2934944, 21.0288866, -83),
+(31, 52.24902, 20.9800115, -101),
+(32, 52.249059, 20.9800598, -101),
+(33, 52.1618596, 21.0532944, -103);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
