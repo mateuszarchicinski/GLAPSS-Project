@@ -10,6 +10,6 @@
 <h2 align="center" border="none">Team:</h2>
 <br/>
 <p align="center">* Mateusz Archicinski</p>
-<p align="center">* </p>
+<p align="center">* Adam Truszkowski</p>
 <p align="center">* </p>
 <br/>
