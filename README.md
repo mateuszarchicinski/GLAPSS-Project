@@ -11,5 +11,5 @@
 <br/>
 <p align="center">* Mateusz Archicinski</p>
 <p align="center">* Adam Truszkowski</p>
-<p align="center">* </p>
+<p align="center">* Bartlomiej Sosnowski</p>
 <br/>
