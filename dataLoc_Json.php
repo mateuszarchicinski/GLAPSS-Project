@@ -2,7 +2,7 @@
     
 	header('Content-type: application/json');
 	
-    $lacze = mysql_connect('localhost', '18659907_sm_i_kb', 'sm_i_kb1')
+    $lacze = mysql_connect('localhost', '18659907_sm_i_kb', '')
 	or die("Problem with data base connection");
 	
     $baza = mysql_select_db('18659907_sm_i_kb', $lacze)
