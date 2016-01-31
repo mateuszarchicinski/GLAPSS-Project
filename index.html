@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="Webowa wersja program na urządzenie mobilne, które będzie pobierało sygnał GPS oraz moc sygnału telefonu komórkowego. Na podstawie tak zebranych danych, program powinien w czasie rzeczywistym wyrysowywać trójwymiarowy wykres f(długość geograficzna, szerokość geograficzna)=Moc sygnału.">
+<meta name="author" content="Team Project">
+<link rel="icon" href="favicon.ico">
+
+<!-- GeoLocation And Phone Signal Strength [ GLAPSS Project ] -->
+<title>GLAPSS Project</title>
+
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-theme.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/style.css">
+
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- Header -->
+
+<header id="header">
+	<div class="container">
+    
+        <nav>
+        	<ul>
+            	<li id="project">
+                	<a href="#" title="Team Project">
+                        <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+                    	<span>GLAPSS Project</span>
+                    </a>
+                </li>
+            	<li id="GM-active" class="active-menu-item">
+                	<a id="googleMapHeader" href="#" title="Google Map">
+                    	<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                    	<span>Google Map</span>
+                    </a>
+                </li>
+                <li id="C-active">
+                	<a id="contactHeader" href="#" title="Contact">
+                    	<span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+                    	<span>Kontakt</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    
+    </div>
+</header>
+
+<!-- Google Map -->
+
+<article class="subsection content" id="googleMap">
+    <div class="container">
+		
+        <div class="subsection-header">
+        	<h2>Google Map</h2>
+            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+        </div>
+        <p><b>GLAPSS Project</b> - GeoLocation and Phone Signal Strength Project</p>
+		
+    </div>
+    
+    <div class="googleMap-content">
+        <div class="container">
+			
+			<div id="Map">
+				
+			</div>
+			<div id="MapError">
+			
+			</div>
+			<div id="form">
+				<input type="text" placeholder="-XX" id="signal_dBm" name="signal_dBm"><label>dBm</label>
+			</div>
+			<div id="MapButton">
+				Zapisz Pomiar
+			</div>
+			<div id="MapLegend">
+				<div>Map Legend [ dBm ]</div>
+				<div>
+					-50
+				</div>
+				<div>
+					-50     -80
+				</div>
+				<div>
+					-80     -100
+				</div>
+				<div>
+					-100     -110
+				</div>
+				<div>
+					-110
+				</div>
+			</div>
+			
+        </div>
+    </div>
+</article>
+
+<!-- Contact -->
+
+<article class="subsection content" id="contact">
+    <div class="container">
+    
+        <div class="subsection-header">
+        	<h2>Kontakt</h2>
+            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+        </div>
+        <p>Jeżeli masz jakieś pytania skontaktuj się z nami, wybór należy do ciebie z jakiej formy kontaktu skorzystasz</p>
+    
+    </div>
+    
+    <div class="socialMedia-messageForm">
+        <div class="container">
+			
+			<div class="socialMedia">
+            	<i class="fa fa-location-arrow"></i>
+				<div>Zobacz Nas</div>
+                <div>
+					<a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+					<a href="https://github.com/mateuszarchicinski/GLAPSS-Project" title="Github"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+			
+            <div class="messageForm">
+				<i class="fa fa-envelope-o"></i>
+				<div>Formularz Wiadomości</div>
+				<div>
+					<form id="myform" action="myforn.php" method="post">
+						<input type="text" placeholder="Imie i Nazwisko..." id="name-lastName" name="name_lastName" title="Name And Last Name"/>
+						<input type="text" placeholder="Moj.Adres.E.Mail@przyklad.pl..." id="e-mail" name="e_mail" title="E-Mail"/>
+						<input type="text" placeholder="Temat..." id="subject" name="subject" title="Subject"/>
+						<textarea type="text" placeholder="Treść Wiadomości..." id="content-message" name="content_message" title="Content Message"/></textarea>
+						<div id="form-info">
+							
+						</div>
+						<input type="submit" id="submit" name="submit" title="Send" value="Wyślij"/>
+					</form>
+				</div>
+			</div>
+		
+        </div>
+    </div>
+</article>
+
+<!-- Footer -->
+
+<footer id="footer">
+    <section id="copyright">
+        <div class="container">
+        
+            <div class="copyright-info">
+                Copyright 2015 - 2016 
+                <a href="#">Team Project</a>
+                 © All rights reserved
+            </div>
+        
+        </div>
+    </section>
+</footer>
+
+<script src="http://maps.google.com/maps/api/js?language=pl"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-72931206-1','auto');ga('send','pageview');
+        </script>
+</body>
+</html>
